@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #E0E0E0;
+}
+body::after{
+    content: "";
+    background: #121214;
+    width: 100%;
+    height: 368px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 736px;
+    margin: 0 auto;
+    gap: 24px;
+    margin-top: 88px;
+}
+
+header{
+    width: 319px;
+    color: white;
+}
+header h1{
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+header p{
+    color: #42D3FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+#my-form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 42px;
+    background: white;
+    padding: 64px;
+    border-radius: 8px 8px 0 0;
+}
+
+fieldset{
+    border: none;
+}
+fieldset legend{
+    font-family: 'Archivo', sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #E6E6F0;
+    width: 100%;
+    padding-bottom: 16px;
+}
+fieldset label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+}
+fieldset label span{
+    margin-left: 12px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #C1BCCC;
+}
+fieldset input, textarea, select{
+    width: 100%;
+    height: 56px;
+    margin: 8px 24px 0 0;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    padding: 24px;
+    color: #4E4958;
+}
+fieldset textarea{
+    height: 168px;
+}
+fieldset select{
+    padding: 0;
+}
+
+.checkbox-wrapper label::before{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid black;
+    border-radius: 8px;
+    border: 1px solid #9d9da0;
+}
+.checkbox-wrapper label{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.checkbox-wrapper input{
+    position: absolute;
+    opacity: 0;
+}
+.checkbox-wrapper > input:checked + label::before{
+    background-image: url(./imgs/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.checkbox-wrapper > input:focus + label::before{
+    border: 2px solid #9d9da0;
+}
+
+.group-inputs{
+    display: flex;
+    gap: 20px;
+}
+.group-inputs > div:nth-child(1){
+    width: 100%;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 736px;
+    margin: 0 auto;
+    height: 136px;
+    background: white;
+    margin-bottom: 91px;
+    border-radius: 0 0 8px 8px;
+    padding: 40px 64px;
+    background: white;
+    justify-content: center;
+    border-top: 1px solid #9d9da0;
+}
+
+.button{
+    height: 56px;
+    border-radius: 8px;
+    border: none;
+    background: #04D361;
+    color: white;
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+}
+.button:hover{
+    background: #058f43;
+}

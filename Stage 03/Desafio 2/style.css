@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    background: #E5E5E5;
+}
+body::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 43.6rem;
+    background: #535971;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 75rem;
+    margin: 0 auto;
+    margin-top: 14rem;
+}
+
+header{
+    width: 35rem;
+}
+header h1{
+    font-family: 'Staatliches', cursive;
+    font-size: 4.8rem;
+    line-height: 6rem;
+    color: white;
+}
+header p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 1.8rem;
+    color: white;
+}
+
+#my-form{
+    display: flex;
+    flex-direction: column;
+    padding: 6.4rem;
+    background: white;
+    border-radius: 2rem 2rem 0 0;
+    margin-top: 5.2rem;
+}
+fieldset{
+    border: none;
+}
+fieldset legend{
+    font-family: 'Staatliches';
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    color: #535971;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid #E6E6F0;
+    width: 100%;
+}
+fieldset label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #4E4958;
+}
+fieldset label span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #C1BCCC;
+}
+.input-group{
+    display: flex;
+    margin-top: 3.6rem;
+    gap: 2.2rem;
+}
+.content-wrapper{
+    width: 100%;
+    margin-bottom: 1.6rem;
+    margin-top: 1.6rem;
+}
+.content-wrapper input{
+    width: 100%;
+    height: 5.6rem;
+    margin-top: 0.8rem;
+    border-radius: 0.8rem;
+    border: 1px solid #E6E6F0;
+    padding: 2.4rem;
+    color: #C1BCCC;
+}
+.content-wrapper fieldset legend{
+    margin-bottom: 3.2rem;
+}
+.title-hour{
+    margin: 3.2rem 0 4.0rem 0;
+}
+.titles-column fieldset legend{
+    font-size: 2rem;
+    line-height: 3.4rem;
+    border-bottom: none;
+    margin-top: 0;
+    padding: 0;
+}
+.titles-column .input-group{
+    margin-top: 0.8rem;
+}
+.titles-column .content-wrapper{
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 75rem;
+    margin: 0 auto;
+    height: 16rem;
+    border-radius: 0 0 2rem 2rem;
+    background: #535971;
+    margin-bottom: 36.6rem;
+    justify-content: center;
+    padding: 6.4rem;
+}
+.button{
+    height: 5.5rem;
+    background: #FF5374;
+    border: none;
+    border-radius: 2rem;
+    font-family: 'Staatliches', cursive;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    color: white;
+    padding: 1.5rem 4rem;
+}
+.button:hover{
+    background: #9e4355;
+    cursor: pointer;
+}
